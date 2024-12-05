@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/************************     General Css     *****************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/************************      Header    *****************************/
+header {
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-container {
+    width: 40%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.logo-name {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.navbar-list {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 8px;
+}
+
+.appointment-button {
+    background-color: #0000FF;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 8px;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.menu-container {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    background-color: #000;
+    height: 2.5px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .appointment-button {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+    .menu-container {
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        gap: 8px;
+    }
+    .bar {
+        height: 5px;
+    }
+    
+}
+
+/************************      HOME    *****************************/
+.home-page-section {
+    background-image: url('./image/image1.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.home-page-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    opacity: 0.95;
+}
+
+.content {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.custom-font-bold {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.custom-font-bold-underline {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.icon {
+    line-height: 1;
+    font-size: 120px;
+}
+
+.book-appointment-button {
+    margin: 20px 0;
+    background-color: #0000ff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 20px 20px 20px #aaaaaa;
+    gap: 20px;
+}
+
+.arrow-icon {
+    font-size: 36px;
+}
+
+.footer-text {
+    font-weight: 400;
+    padding: 20px 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .home-page-container {
+        padding: 40px 30px;
+    }
+
+    .he-ar-con {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .main-heading {
+        padding: 50px 10px;
+        line-height: 1.5;
+        font-size: 36px;
+    }
+
+    .icon {
+        font-size: 180px;
+    }
+
+    .book-appointment-button {
+        margin: 30px 0;
+        padding: 10px 35px;
+        font-size: 22px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+/************************      Our Work    *****************************/
+.our-work-section {
+    max-width: 800px;
+}
+.our-work-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.heading-container {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 50px 0;
+}
+.vertical-line {
+    width: 4px;
+    height: 80px;
+    background-color: #ff0000;
+}
+.heading-three {
+    color: #000;
+    font-size: 32px;   
+    line-height: 1.2;
+}
+.more-expertise-btn {
+    background-color: #fff;
+    align-self: flex-start;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px #aaaaaa;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+.description-list{
+    list-style-type: none;
+    color: #000;
+    font-size: 18px;  
+}
+.description-item {
+    padding: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .our-work-section {
+        max-width: 1200px;
+    }
+    .heading-container {
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .vertical-line {
+        height: 15vh;
+    }
+    .heading-three {
+        font-size: 52px;
+    }
+    .more-expertise-btn {
+        margin: 250px 0 0 0;
+    } 
+    .custom-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+    }
+    .description-item {
+        max-width: 600px;
+    }
+}
+
+/************************      Exceptional   *****************************/
+.exceptional-section {
+    background-image: url('./image/Spacio\ TechTonics\ Consultancy\ V21.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    padding: 30px;
+}
+.cursol-arrow {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 50px 0;
+}
+.mid-heading {
+    padding: 20px 0 100px 0;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    .mid-heading{
+        font-size: 40px;
+    }
+}
+/************************      Our Presence   *****************************/
+.our-presence-section {
+    background-image: url('./image/Chennai_skyline.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.presence-container {
+    background: #fff;
+    opacity: 0.95;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.locations-and-content {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.presence-heading {
+    padding: 10px;
+    border-left: 3px solid #ff0000;
+    font-size: 24px;
+    color: #000;
+}
+.presence-description {
+    padding: 30px 10px 10px 0;
+    font-size: 12px;
+    color: #000;
+    width: 280px;
+    line-height: 1;
+}
+.map {
+    width: 50%;
+}
+.cities-and-map {
+    display: flex;
+    justify-content: space-between;
+}
+.cities-list {
+    padding: 20px 30px;
+}
+.city {
+    font-size: 10px;
+    color: #000;
+}
+.active-projects-container {
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 20px #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.map-lg {
+    display: none;
+}
+.count {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-details-btn {
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.details {
+    font-size: 6px;
+    color: #000;
+}
+@media screen and (min-width: 768px) {
+    .presence-container {
+        padding: 40px 30px 0 30px;
+    }
+    .locations-and-content {
+        width: 100%;
+        max-width: 1300px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content {
+        width: 50%;
+    }
+    .presence-heading {
+        font-size: 36px;
+    }
+    .presence-description {
+        font-size: 18px;
+    }
+    .map {
+        display: none;
+    }
+    .map-lg {
+        display: block;
+        width: 50%;
+    }
+    .city {
+        font-size: 16px;
+    }
+    .count {
+        font-size: 26px;
+    }
+    .details {
+        font-size: 12px;
+    }
+}
+
+/************************     Latest Work    *****************************/
+.latest-work-section {
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg-img-site-one {
+    background-image: url('./image/image1.png');
+    background-position: right;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+.bg-img-site-two {
+    background-image: url('./image/image1.png');
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.latest-work-heading {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-left: 3px solid #ff0000;
+    font-size: 36px;
+    color: #000;
+}
+.latest-work-container {
+    padding: 20px 0;
+}
+.place-city {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
+}
+@media screen and (min-width: 768px) {
+    .latest-work-container {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    .bg-curosel-one {
+        width: 70%;
+    }
+    .bg-curosel-two {
+        width: 30%;
+    }
+    .bg-img-site-one {
+        width: 100%;
+        height: 50vh;
+    }
+    .bg-img-site-two {
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+/************************     Insights   *****************************/
+.insights-section {
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 1300px;
+}
+.insights-heading {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-left: 3px solid #ff0000;
+    font-size: 36px;
+    color: #000;
+}
+.insights-curosel {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.insight-and-description {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.insights {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #aaaaaa;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.linkedin-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: 3px solid #000;
+    background-color: #000;
+}
+.insights-description {
+    margin: 30px 0 20px 0;
+    font-size: 10px;
+    color: #000;
+}
+.data {
+    align-self: flex-end;
+    font-size: 8px;
+}
+@media screen and (min-width: 768px) {
+    .insights-curosel {
+        gap: 30px;
+    }
+    .insight-and-description {
+        height: 400px;
+        width: 280px;
+    }
+    .insights {
+        padding: 20px;
+        height: 280px;
+        width: 280px;
+    }
+    .linkedin-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .insights-description {
+        font-size: 16px;
+    }
+    .data {
+        font-size: 12px;
+    }
+}
+
+/************************     Contact   *****************************/
+.contact-section {
+    background-image: url('./image/Spacio\ TechTonics\ Consultancy\ V21.png');
+    width: 100%;
+    background-position: right;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.responsive {
+    width: 100%;
+    max-width: 1300px;
+}
+.contact-logo-name {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.nav-link-contact {
+    font-size: 8px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.bar-contact {
+    background-color: #fff;
+    height: 2.5px;
+    width: 100%;
+}
+.contact-content {
+    padding: 20px;
+}
+.heading {
+    font-size: 24px;
+}
+.email,.phone-number,.contact-description {
+    font-size: 14px;
+}
+.underline {
+    text-decoration: underline;
+    font-style: italic;
+}
+.phase {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.phase-heading {
+    font-size: 22px;
+}
+.description {
+    font-size: 14px;
+}
+.social-and-signup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.social-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.get-social {
+    font-size: 30px;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+.email-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+input {
+    background-color: transparent;
+    padding: 15px 35px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+.signup-button {
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #aaaaaa;
+    font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+    .contact-section {
+        padding: 30px;
+    }
+    .contact-logo-name {
+        font-size: 22px;
+    }
+    .nav-link-contact {
+        font-size: 18px;
+    }
+    .bar-contact {
+        height: 5px;
+    }
+    .heading {
+        font-size: 32px;
+    }
+    .phase-heading {
+        font-size: 32px;
+    }
+    .social-and-signup {
+        gap: 50px;
+    }
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/************************     Footer   *****************************/
+footer {
+    min-height: 20vh;
+    background-color: #111110;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.left-side-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo-container {
+    display: flex;
+    gap: 10px;
+}
+.footer-logo {
+    width: 60px;
+    height: 60px;
+}
+.footer {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.footer-link-list {
+    list-style-type: none;
+    padding: 0;
+}
+.active {
+    font-weight: 500;
+    font-size: 20px;
+}
+.footer-link {
+    line-height: 2;
+    color: #aaaaaa;
+}
+.call-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.call-us {
+    font-weight: bold;
+    font-size: 20px;
+}
+.telephone-icon {
+    height: 70px;
+    width: 70px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 25%;
+}
+@media screen and (min-width: 768px) {
+    footer{
+        padding: 40px 30px;
+    }
+    .footer-container {
+        justify-content: space-between;
+    }
+    .footer {
+        font-size: 36px;
+    }
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
